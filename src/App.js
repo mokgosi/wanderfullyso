@@ -15,6 +15,7 @@ import Discover from './pages/Discover';
 import Feedback from './pages/Feedback';
 import Topbar from './components/Topbar';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
                     <Route path="/feedback" component={Feedback} />
                 </Switch>
                 <ScrollToTop smooth />
+                <Footer />
                 <Navbar />
             </Router>
         </div>  
