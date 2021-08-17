@@ -3,50 +3,53 @@ import { useState } from 'react';
 
 import Slides from '../data/home-slides';
 import LatesBlogs from '../data/blogs';
-import likeALocalData from '../data/like-a-local';
+import LikeALocalData from '../data/like-a-local';
+import TestimonialsData from '../data/testimonials';
 
 import BookVirtualTour from '../components/BookVirtualTour';
 import LikeALocal from '../components/LikeALocal';
 import Blogs from '../components/Blogs';
+import Testimonials from '../components/Testimonials';
 
 const Home = () => {
 
     const [slides, setSlides] = useState(Slides);
     const [blogs, setBlogs] = useState(LatesBlogs);
-    const [locals, setLocals] = useState(likeALocalData);
+    const [locals, setLocals] = useState(LikeALocalData);
+    const [testimonials, setTestimonials] = useState(TestimonialsData);
 
     return ( 
         <div className="Home">
             <AppCarousel slides={slides}/>
-            <div class="theme-bg">
-                <div class="container home-iconbox">
-                    <div class="section pb0">
-                        <div class="spacer"></div>
-                        <div class="row mb0">
-                            <div class="col s12 pad-0">
-                                <div class="row">
-                                    <div class="col s6 m6 l3">
-                                        <div class="icon-block block">
-                                            <div class="icon-area center primary-text"><i class="mdi mdi-city"></i></div>
-                                            <h7 class="title-area center">Search Virtual <br/> Experiences </h7>
+            <div className="theme-bg">
+                <div className="container home-iconbox">
+                    <div className="section pb0">
+                        <div className="spacer"></div>
+                        <div className="row mb0">
+                            <div className="col s12 pad-0">
+                                <div className="row">
+                                    <div className="col s6 m6 l3">
+                                        <div className="icon-block block">
+                                            <div className="icon-area center primary-text"><i className="mdi mdi-city"></i></div>
+                                            <h1 className="title-area center">Search Virtual <br/> Experiences </h1>
                                         </div>
                                     </div>
-                                    <div class="col s6 m6 l3">
-                                        <div class="icon-block block">
-                                            <div class="icon-area center primary-text"><i class="mdi mdi-bus-double-decker"></i></div>
-                                            <h7 class="title-area center">Virtually Connect <br/> with Locals</h7>
+                                    <div className="col s6 m6 l3">
+                                        <div className="icon-block block">
+                                            <div className="icon-area center primary-text"><i className="mdi mdi-bus-double-decker"></i></div>
+                                            <h1 className="title-area center">Virtually Connect <br/> with Locals</h1>
                                         </div>
                                     </div>
-                                    <div class="col s6 m6 l3">
-                                        <div class="icon-block block">
-                                            <div class="icon-area center primary-text"><i class="mdi mdi-candycane"></i></div>
-                                            <h7 class="title-area center">Get Local <br/> Tips</h7>
+                                    <div className="col s6 m6 l3">
+                                        <div className="icon-block block">
+                                            <div className="icon-area center primary-text"><i className="mdi mdi-candycane"></i></div>
+                                            <h1 className="title-area center">Get Local <br/> Tips</h1>
                                         </div>
                                     </div>
-                                    <div class="col s6 m6 l3">
-                                        <div class="icon-block block">
-                                            <div class="icon-area center primary-text"><i class="mdi mdi-chili-medium"></i></div>
-                                            <h7 class="title-area center">Book Day Trips &<br/> Activities(Coming Soon)</h7>
+                                    <div className="col s6 m6 l3">
+                                        <div className="icon-block block">
+                                            <div className="icon-area center primary-text"><i className="mdi mdi-chili-medium"></i></div>
+                                            <h1 className="title-area center">Book Day Trips &<br/> Activities(Coming Soon)</h1>
                                         </div>
                                     </div>
                                 </div>
@@ -62,10 +65,10 @@ const Home = () => {
 
             {/* <!-- BLogs --> */}
 
-            <div class="section">
-                <div class="row mb0">
-                    <div class="col s12 pad-0">
-                        <h5 class="bot-20 sec-tit center ">Blogs</h5>
+            <div className="section">
+                <div className="row mb0">
+                    <div className="col s12 pad-0">
+                        <h5 className="bot-20 sec-tit center ">Blogs</h5>
                         <Blogs blogs={blogs}/>
                     </div>
                 </div>
@@ -77,11 +80,11 @@ const Home = () => {
 
             {/* <!-- LIKE A LOCAL COMPONENT  --> */}
 
-            <div class="theme-bg">
-                <div class="container">
-                    <div class="section pb0">
-                        <div class="row ">
-                            <div class="col s12 pad-0">
+            <div className="theme-bg">
+                <div className="container">
+                    <div className="section pb0">
+                        <div className="row ">
+                            <div className="col s12 pad-0">
                                 <LikeALocal locals={locals}/>
                             </div>
                         </div>
@@ -91,10 +94,7 @@ const Home = () => {
 
             {/* <!-- TESTIMONIALS COMPONENT  --> */}
 
-
-
-
-
+            <Testimonials testimonials={testimonials}/>
 
 
         </div>

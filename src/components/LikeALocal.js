@@ -6,7 +6,7 @@ const LikeALocal = ({locals}) => {
             {locals.map((l, i) => (
                 <div key={l.id} className="col s6">
                     <a className="img-wrap round" href={l.url}>
-                        <img src={l.image} alt="image" style={{width: `100%;`}} />
+                        <img src={l.image} alt="image" style={{width: `100%`}} />
                     </a>
                     <a href={l.url}>
                         <h6>Blogs</h6>

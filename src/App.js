@@ -19,7 +19,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-      <div className="content-area">
+        <div className="content-area">
             <Router>
                 <Topbar />
                 <Switch>

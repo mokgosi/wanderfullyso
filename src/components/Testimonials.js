@@ -1,14 +1,11 @@
 import React from "react";
-import TestimonialsList from "../data/testimonials";
 
-const Testimonials = () => {
-
-    const [testimonials, setTestimonials] = useState(Testimonials);
+const Testimonials = ({testimonials}) => {
 
     return ( 
         <div className="Testimonials">
             {testimonials.map((t, i) => (
-                <div>
+                <div key={i}>
                 <h6>{t.name}</h6>
                 <p>{t.message}</p>
                 </div>
