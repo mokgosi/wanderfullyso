@@ -12,7 +12,7 @@ const Footer = () => {
         <footer className="page-footer center social-colored">
             <div className="container footer-content">
                 <div className="row">
-                    <div>
+                    <div  className="">
                         <h5 className="logo">Wonderfullyso</h5>
                     </div>
                     <div className="link-wrap">

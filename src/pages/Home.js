@@ -31,25 +31,25 @@ const Home = () => {
                                     <div className="col s6 m6 l3">
                                         <div className="icon-block block">
                                             <div className="icon-area center primary-text"><i className="mdi mdi-city"></i></div>
-                                            <h1 className="title-area center">Search Virtual <br/> Experiences </h1>
+                                            <h7 className="title-area center">Search Virtual <br/> Experiences </h7>
                                         </div>
                                     </div>
                                     <div className="col s6 m6 l3">
                                         <div className="icon-block block">
                                             <div className="icon-area center primary-text"><i className="mdi mdi-bus-double-decker"></i></div>
-                                            <h1 className="title-area center">Virtually Connect <br/> with Locals</h1>
+                                            <h7 className="title-area center">Virtually Connect <br/> with Locals</h7>
                                         </div>
                                     </div>
                                     <div className="col s6 m6 l3">
                                         <div className="icon-block block">
                                             <div className="icon-area center primary-text"><i className="mdi mdi-candycane"></i></div>
-                                            <h1 className="title-area center">Get Local <br/> Tips</h1>
+                                            <h7 className="title-area center">Get Local <br/> Tips</h7>
                                         </div>
                                     </div>
                                     <div className="col s6 m6 l3">
                                         <div className="icon-block block">
                                             <div className="icon-area center primary-text"><i className="mdi mdi-chili-medium"></i></div>
-                                            <h1 className="title-area center">Book Day Trips &<br/> Activities(Coming Soon)</h1>
+                                            <h7 className="title-area center">Book Day Trips &<br/> Activities(Coming Soon)</h7>
                                         </div>
                                     </div>
                                 </div>
@@ -65,11 +65,13 @@ const Home = () => {
 
             {/* <!-- BLogs --> */}
 
-            <div className="section">
-                <div className="row mb0">
-                    <div className="col s12 pad-0">
-                        <h5 className="bot-20 sec-tit center ">Blogs</h5>
-                        <Blogs blogs={blogs}/>
+            <div className="container">
+                <div className="section">
+                    <div className="row mb0">
+                        <div className="col s12 pad-0">
+                            <h5 className="bot-20 sec-tit center ">Blogs</h5>
+                            <Blogs blogs={blogs}/>
+                        </div>
                     </div>
                 </div>
             </div>

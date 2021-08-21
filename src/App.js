@@ -16,12 +16,17 @@ import Feedback from './pages/Feedback';
 import Topbar from './components/Topbar';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import MiniClose from './components/MiniClose';
+import Preloader from './components/Preloader';
 
 function App() {
   return (
+        <div>
+        {/* <Preloader />     */}
+        <Topbar />
+        <MiniClose />
         <div className="content-area">
             <Router>
-                <Topbar />
                 <Switch>
                     <Route exact path="/" component={Home} />
                     <Route path="/tips" component={Tips} />
@@ -30,9 +35,10 @@ function App() {
                     <Route path="/feedback" component={Feedback} />
                 </Switch>
                 <ScrollToTop smooth />
-                <Footer />
-                <Navbar />
             </Router>
+        </div>  
+        <Footer />
+        <Navbar />
         </div>  
   );
 }
